@@ -4,4 +4,4 @@ data/
 .RDS
 .RDATA
 .Rproj
-
+core*

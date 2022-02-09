@@ -4,6 +4,7 @@ library("Seurat")
 library("glmGamPoi")
 library("harmony")
 library("patchwork")
+library("ggplot2")
 
 # ran using command line
 

@@ -51,4 +51,9 @@ res0.4 + res0.5 + res0.6 + res0.8
 dev.off()
 
 
-save.image("data/CMD__TCELLS__sct__harmony__split__by__orig.ident.Rdata")
+# save.image("data/CMD__TCELLS__sct__harmony__split__by__orig.ident.Rdata")
+DefaultAssay(tcells.sv4) <- "RNA"
+Idents(tcells.sv4)
+allmarkers.res0.5 = FindAllMarkers(tcells.sv4, only.pos = TRUE, min.pct = 0.25, logfc.threshold = 0.25)
+write.csv(allmarkers.res0.5, file = "results/Tcells_seurat_v4_findAllMarkers_minpct.25_lfc.25.csv", quote = F)
+saveRDS(allmarkers.res0.5, file = "results/Tcells_seurat_v4_findAllMarkers_minpct.25_lfc.25.RDS") 

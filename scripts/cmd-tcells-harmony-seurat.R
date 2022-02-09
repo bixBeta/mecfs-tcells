@@ -4,6 +4,7 @@ library("Seurat")
 library("glmGamPoi")
 library("harmony")
 library("patchwork")
+library("ggplot2")
 
 sobj = readRDS("data/sv4__TCELLS__.RDS")
 

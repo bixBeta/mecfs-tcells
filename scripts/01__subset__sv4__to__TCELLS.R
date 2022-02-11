@@ -20,6 +20,14 @@ tcell.clusts = c("0","1","23","11","16","25","6","4","12","28","13","5","20","3"
 #         group.by = "SCT_snn_res.0.6",cols="Spectral", dot.scale=3) + RotatedAxis() + 
 #   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + ggtitle("sv4__dotPlot-gex-clusters") 
 # dev.off()
+# lv.feats3 = c("CD79A","MS4A14","CD19","HLA-DRA","IGHD","IGHM","IGHG1","IGHA1","JCHAIN","MZB1","CD38","MKI67","CD14","FCGR3A","CLEC9A","CD1C","CLEC4C","IL3RA","AXL","SIGLEC6","HLA-DRB5","ITGAX","CD86","CD3E","NKG7")
+# 
+# png(filename = "figures/sv4__dotPlot3-gex-clusters.png", width = 1000, height = 1000)
+# DotPlot(sv4, assay="RNA", features=lv.feats3, col.min=-1.5,
+#         group.by = "SCT_snn_res.0.6",cols="Spectral", dot.scale=3) + RotatedAxis() +
+#   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + ggtitle("sv4__dotPlot-gex-clusters")
+# dev.off()
+
 
 
 # DotPlot(sv4, assay="RNA", features=lv.feats2, col.min=-1.5,

@@ -41,3 +41,15 @@ DotPlot(tcells.sv4, assay="RNA", features=lv.feats2, col.min=-1.5,
 dev.off()
 
 
+DotPlot(tcells.sv4, assay="RNA", features=lv.feats2, col.min=-1.5,
+        group.by = "SCT_snn_res.0.5",cols="Spectral", dot.scale=3, cluster.idents = T,scale.by = 'size') + RotatedAxis() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + ggtitle("Tcells__sv4__dotPlot-gex-clusters (res 0.5)")
+
+DotPlot(tcells.sv4, assay="RNA", features=lv.feats2, col.min=-1.5,
+        group.by = "SCT_snn_res.0.6",cols="Spectral", dot.scale=3, cluster.idents = T,scale.by = 'size') + RotatedAxis() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + ggtitle("Tcells__sv4__dotPlot-gex-clusters (res 0.6)")
+
+
+DotPlot(tcells.sv4, assay="RNA", features=lv.feats2, col.min=-1.5,
+        group.by = "SCT_snn_res.0.8",cols="Spectral", dot.scale=3, cluster.idents = T,scale.by = 'size') + RotatedAxis() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + ggtitle("Tcells__sv4__dotPlot-gex-clusters (res 0.8)")
